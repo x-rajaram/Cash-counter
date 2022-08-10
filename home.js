@@ -72,7 +72,7 @@ function notesCount() {
         // alert("incorrect:Cash Amount ");
         hideElement(tblContainer);
         msgStmt.innerHTML = "incorrect:Cash Paid";
-        msgStmt.classList.remove("sucss-msg");
+        msgStmt.classList.remove("sucss-msg","nocash-msg");
         msgStmt.classList.add("err-msg");
 
     } else if (parseInt(txtcash.value) === parseInt(txtBill.value)) {
@@ -84,7 +84,7 @@ function notesCount() {
         tblDisplay();
         showElements(tblContainer);
         msgStmt.innerHTML = "Retun the Cash";
-        msgStmt.classList.remove("err-msg");
+        msgStmt.classList.remove("err-msg","nocash-msg");
         msgStmt.classList.add("sucss-msg");
         // msgStmt.setAttribute("color","#008000");
     }
