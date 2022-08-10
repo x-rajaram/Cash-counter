@@ -1,4 +1,3 @@
-alert("Hi how are you");
 var txtBill = document.querySelector("#txt-bill");
 var btnNext = document.querySelector("#btn-next");
 var txtCashpaid = document.querySelector("#cash-container");
