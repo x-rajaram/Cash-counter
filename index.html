@@ -10,64 +10,72 @@
 </head>
 
 <body>
-    <!-- <div class="main">
+    <div class="main">
         <header>
-            <h1>Cash Counter</h1>
-
+            <h1>Cash Counter</h1>  
             <p>Enter the Bill Amount and Cash paid
                 by customer and check retruns the minimum number of
-                currency notes </p>
+                currency notes </p>          
         </header>
         <div class="container">
+            
             <label for="bill-amt"> Bill Amount
             </label>
-            <input type="text"></input>
-            <button> Next </button>
+            <input type="number" id="txt-bill" min="0" value="" placeholder="Bill Amount"></input>
+            <button id="btn-next" disabled="true"> Next </button>
         </div>
 
-        <div class="container">
+        <div id="cash-container" class="container hidden">
             <label for="cash-paid"> Cash Paid</label>
-
-            <input type="text"></input>
+            <input id="txt-cash" type="number" min="0" placeholder="Received Cash"></input>
         </div>
-        <div class="container">
-            <button>count</button>
+        <div class="container ">
+            <button id="btn-count" disabled="true" class="hidden">Count</button>
         </div>
-        <h2>Retrun Change</h2>
-        <table>
-            <tr>
-                <th>No Of Notes</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                
-            </tr>
-            <tr>
-                <th>Note</th>
-                <th>2000</th>
-                <th>500</th>
-                <th>200</th>
-                <th>100</th>
-                <th>50</th>
-                <th>20</th>
-                <th>10</th>
-                <th>5</th>
-                <th>2</th>
-                <th>1</th>
-            </tr>
+        <div id="tbl-container" class="hidden">
+            <h2>Return Change</h2>
+            <table id="tbl-chng">
+                <tbody>
+                    <tr>
+                        <th>No Of Notes</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
 
-        </table>
-    </div> -->
-    <footer>
-        about
-    </footer>
+                    </tr>
+                    <tr>
+                        <th>Note</th>
+                        <th>2000</th>
+                        <th>500</th>
+                        <th>200</th>
+                        <th>100</th>
+                        <th>50</th>
+                        <th>20</th>
+                        <th>10</th>
+                        <th>5</th>
+                        <th>2</th>
+                        <th>1</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="msg-container">
+            <Label id="msgg"></Label>
+        </div>
+        <footer >
+            About
+           <p>Enter the Bill Amount and Cash paid by customer and check retruns the minimum number of currency notes</p>
+        </footer>
+    </div>
+    
+    <script src="home.js" type="text/javascript"></script>
 </body>
 
 </html>
